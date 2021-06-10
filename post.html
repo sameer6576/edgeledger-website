@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/5a79ed42e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome To UpStox</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i> Up</span
+          >Stox
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+    <main>
+      <section class="post">
+        <h2>Blog Post #1</h2>
+            <p class="meta">
+             <i class="fas fa-user"></i>
+              Posted by <strong>Mary Jane</strong>  | June 14 2021
+            </p>
+            <img src="./image_resources/blog/blog1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste doloribus totam illo optio enim voluptate expedita itaque nulla earum odio, iure pariatur, maxime mollitia repellat! Porro esse hic ut necessitatibus! Laborum maxime adipisci quod amet soluta iure ab consequatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam unde sit in vitae tenetur ad ducimus optio nemo quam. Reiciendis tempora ullam, nobis nesciunt placeat ratione quaerat ipsam in excepturi enim doloremque eius distinctio omnis tempore optio sit! Omnis sed eligendi saepe reprehenderit aperiam accusantium, modi inventore rem, distinctio ipsam, repellendus nobis officia alias molestiae quasi sequi sit nihil. At repellendus necessitatibus distinctio vel quos vitae amet aperiam debitis atque, dignissimos quo temporibus possimus soluta autem voluptatem illo eos, accusantium molestias voluptatum error est beatae libero reprehenderit? Deleniti, temporibus officia, similique natus ipsum omnis, velit fuga veritatis molestias deserunt numquam.</p>
+      </section>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020-UpStox</p>
+    </footer>
+    <script>      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+
+      window.onscroll = function(){
+        if(window.pageYOffset > 100){
+          navbar.classList.remove('top');
+          if(!scrolled){
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function(){
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          },2000);
+        }
+        else{
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      }</script>
+  </body>
+</html>
